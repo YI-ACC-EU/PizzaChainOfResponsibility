@@ -10,7 +10,8 @@
         private static Dictionary<string, decimal> doughPriceList = 
             new Dictionary<string, decimal>()
             {
-                { "integrale", 1.0M }
+                { "integrale", 1.0M },
+                { "normale", 0.0M }
             };
 
         private static Dictionary<string, decimal> addsPriceList =
@@ -31,7 +32,7 @@
 
         public static IPriceManager GetPriceManager(Type type)
         {
-            switch(type.GetType().Name)
+            switch(type.Name)
             {
                 case "DoughHandler":
                     return new PriceManager(doughPriceList);
@@ -54,6 +55,7 @@
 
         public decimal GetPrice(string itemName)
         {
+            if (string.IsNullOrEmpty(itemName)) return 0;
             if(_priceList.TryGetValue(itemName, out decimal price))
             {
                 return price;

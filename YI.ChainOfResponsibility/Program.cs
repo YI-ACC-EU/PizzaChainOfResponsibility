@@ -1,8 +1,8 @@
 ﻿using System.Text;
 using YI.ChainOfResponsibility;
 
-const string OrdersDirectory = @"C:\\Workspace\\Accademy\\Decorator";
-const string OutputFile = @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT";
+const string OrdersDirectory = @"C:\TEMP\TEST";
+const string OutputFile = @"C:\TEMP\TEST\OrderTotals.TXT";
 
 //Inizio creazione di Chain-Of-Responsibility
 //Creiamo gli handler
@@ -39,7 +39,7 @@ foreach(var file in directoryInfo)
         orderItems.Add(pizza);
     }
     orderTotalsStringBuilder.AppendLine(
-        $"{orderId}; Totals: {orderItems.Sum(x=>x.GetTotals())}");
+        $"{orderId};{orderItems.Sum(x=>x.GetTotals())}");
 }
 orderRepository.SaveToFile(OutputFile, 
     orderTotalsStringBuilder.ToString());
