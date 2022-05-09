@@ -6,9 +6,9 @@ const string OutputFile = @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT"
 
 //Inizio creazione di Chain-Of-Responsibility
 //Creiamo gli handler
-var pizzaHandler = new PizzaTypeHandler();
-var doughHandler = new DoughHandler();
-var addsHandler = new AddsHandler();
+var pizzaHandler = new PizzaTypeHandler(PriceManagerFactory.GetPriceManager(typeof(PizzaTypeHandler)));
+var doughHandler = new DoughHandler(PriceManagerFactory.GetPriceManager(typeof(DoughHandler)));
+var addsHandler = new AddsHandler(PriceManagerFactory.GetPriceManager(typeof(AddsHandler)));
 //Definiamo la catena
 pizzaHandler.SetSuccesor(doughHandler);
 doughHandler.SetSuccesor(addsHandler);
