@@ -1,0 +1,15 @@
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\bin\Debug\net6.0\YI.ChainOfResponsibility.exe
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\bin\Debug\net6.0\YI.ChainOfResponsibility.deps.json
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\bin\Debug\net6.0\YI.ChainOfResponsibility.runtimeconfig.json
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\bin\Debug\net6.0\YI.ChainOfResponsibility.dll
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\bin\Debug\net6.0\YI.ChainOfResponsibility.pdb
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.csproj.AssemblyReference.cache
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.AssemblyInfoInputs.cache
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.AssemblyInfo.cs
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.csproj.CoreCompileInputs.cache
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.dll
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\refint\YI.ChainOfResponsibility.dll
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.pdb
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\YI.ChainOfResponsibility.genruntimeconfig.cache
+C:\Users\ivlyev\Documents\Accademy\Repo\Patterns\YI.ChainOfResponsibility\YI.ChainOfResponsibility\YI.ChainOfResponsibility\obj\Debug\net6.0\ref\YI.ChainOfResponsibility.dll
