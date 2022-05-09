@@ -4,9 +4,11 @@
     {
         public override void ProcessPrice(Pizza pizza)
         {
-            // appicare il prezzo dell'impasto.
-            throw new NotImplementedException();
 
+            if (pizza.TipoPizza.ItemName.Equals("integrale", StringComparison.InvariantCultureIgnoreCase))
+                pizza.TipoPizza.Ammount = 1M;
+            else
+                pizza.TipoPizza.Ammount = 0M;
             _next?.ProcessPrice(pizza);
         }
     }

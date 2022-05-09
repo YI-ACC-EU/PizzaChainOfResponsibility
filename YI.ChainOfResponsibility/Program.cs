@@ -1,7 +1,8 @@
 ﻿using System.Text;
 using YI.ChainOfResponsibility;
 
-const string OrdersDirectory = "C:\\Workspace\\Accademy\\Decorator";
+const string OrdersDirectory = @"C:\\Workspace\\Accademy\\Decorator";
+const string OutputFile = @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT"
 
 //Inizio creazione di Chain-Of-Responsibility
 //Creiamo gli handler
@@ -14,13 +15,13 @@ doughHandler.SetSuccesor(addsHandler);
 //Fine creazione di Chain-Of-Responsibility
 
 //Creiamo repository che se ne occuperà di persistenza. Lettura e scrittura dei dati sul filesystem
-var orderRepository = new OrderRepository();
+IOrderRepository orderRepository = new OrderRepository();
 var directoryInfo = orderRepository.GetFileNames(OrdersDirectory);
 var progressivo = 1;
 var orderTotalsStringBuilder = new StringBuilder();
 foreach(var file in directoryInfo)
 {
-    var orderId = $"order number { progressivo++ }";
+    var orderId = $"Ordine { progressivo++ }";
     var orderLines = orderRepository.GetOrderLines(file);
     var orderItems = new List<Pizza>();
     foreach(var line in orderLines)
@@ -38,8 +39,7 @@ foreach(var file in directoryInfo)
         orderItems.Add(pizza);
     }
     orderTotalsStringBuilder.AppendLine(
-        $"OrderNum: {progressivo}; Totals: {orderItems.Sum(x=>x.GetTotals())}");
+        $"{orderId}; Totals: {orderItems.Sum(x=>x.GetTotals())}");
 }
-orderRepository.SaveToFile(
-    @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT", 
+orderRepository.SaveToFile(OutputFile, 
     orderTotalsStringBuilder.ToString());

@@ -4,9 +4,11 @@
     {
         public override void ProcessPrice(Pizza pizza)
         {
-            // processare il prezzo
-            throw new NotImplementedException();
 
+            if (pizza.TipoPizza.ItemName.Equals("margherita", StringComparison.InvariantCultureIgnoreCase))
+                pizza.TipoPizza.Ammount = 5.0M;
+            else if(pizza.TipoPizza.ItemName.Equals("marinara", StringComparison.InvariantCultureIgnoreCase))
+                pizza.TipoPizza.Ammount = 6.0M;
             _next?.ProcessPrice(pizza);
         }
     }
