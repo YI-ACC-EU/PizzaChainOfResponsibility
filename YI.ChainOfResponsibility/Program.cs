@@ -2,7 +2,7 @@
 using YI.ChainOfResponsibility;
 
 const string OrdersDirectory = @"C:\\Workspace\\Accademy\\Decorator";
-const string OutputFile = @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT"
+const string OutputFile = @"C:\\Workspace\\Accademy\\Decorator\\OrderTotals.TXT";
 
 //Inizio creazione di Chain-Of-Responsibility
 //Creiamo gli handler

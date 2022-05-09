@@ -2,13 +2,12 @@
 {
     public class PizzaTypeHandler : PriceFiller
     {
+        public PizzaTypeHandler(IPriceManager priceManager) 
+            : base(priceManager){ }
+
         public override void ProcessPrice(Pizza pizza)
         {
-
-            if (pizza.TipoPizza.ItemName.Equals("margherita", StringComparison.InvariantCultureIgnoreCase))
-                pizza.TipoPizza.Ammount = 5.0M;
-            else if(pizza.TipoPizza.ItemName.Equals("marinara", StringComparison.InvariantCultureIgnoreCase))
-                pizza.TipoPizza.Ammount = 6.0M;
+            pizza.TipoPizza.Ammount = _priceManager.GetPrice(pizza.TipoPizza.ItemName);
             _next?.ProcessPrice(pizza);
         }
     }
